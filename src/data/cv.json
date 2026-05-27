@@ -20,11 +20,11 @@
   },
   "about": {
     "en": "Full-Stack & ERP Engineer with 4 years at FAHASA — promoted to Head of Department within 2 years of joining. Led a 10-person team delivering ERP and mobile systems used by 3,000+ people across 140 bookstores every day. Recognized with consecutive Letters of Commendation (2023, 2024) and Certificate of Merit (2025) for outstanding technical and business impact.",
-    "vi": "Full-Stack & ERP Engineer với 4 năm tại FAHASA — được thăng chức Trưởng Bộ Phận chỉ sau 2 năm gia nhập. Dẫn dắt đội 10 kỹ sư xây dựng hệ thống ERP và ứng dụng mobile phục vụ 3.000+ người dùng tại 140 nhà sách mỗi ngày. Được ghi nhận với Thư Khen liên tiếp (2023, 2024) và Giấy Khen (2025) vì thành tích kỹ thuật và kinh doanh xuất sắc."
+    "vi": "Kỹ sư Phát Triển Full-Stack & ERP với 4 năm tại FAHASA — được thăng chức Trưởng Bộ Phận chỉ sau 2 năm gia nhập. Dẫn dắt đội 10 kỹ sư xây dựng hệ thống ERP và ứng dụng mobile phục vụ 3.000+ người dùng tại 140 nhà sách mỗi ngày. Được ghi nhận với Thư Khen liên tiếp (2023, 2024) và Giấy Khen (2025) vì thành tích kỹ thuật và kinh doanh xuất sắc."
   },
   "objective": {
     "en": "As a **Full-Stack & ERP Engineer** in the AI era, I position myself as a strategic **Problem Solver** — one who architects real solutions, not just ships features. My goal is to join a team where I can apply deep **root-cause thinking** and **AI-augmented productivity** to build systems that genuinely move the business forward.",
-    "vi": "Là **Full-Stack & ERP Engineer** trong thời đại AI, tôi định vị bản thân là **Problem Solver** chiến lược — không chỉ viết code mà kiến trúc giải pháp thực sự. Mục tiêu là gia nhập đội ngũ nơi tôi có thể áp dụng **tư duy phân tích gốc rễ** và **năng suất AI** để xây dựng hệ thống tạo ra giá trị thực cho doanh nghiệp.",
+    "vi": "Là **Kỹ Sư Full-Stack & ERP** trong thời đại AI, tôi định vị bản thân là **Người Giải Quyết Vấn Đề** chiến lược — không chỉ viết code mà kiến trúc giải pháp thực sự. Mục tiêu là gia nhập đội ngũ nơi tôi có thể áp dụng **tư duy phân tích gốc rễ** và **năng suất AI** để xây dựng hệ thống tạo ra giá trị thực cho doanh nghiệp.",
     "impacts": {
       "en": [],
       "vi": []
@@ -38,35 +38,23 @@
     "period": "SEP 2018 - OCT 2022"
   },
   "skills": {
-    "frontend": ["HTML", "CSS", "JavaScript", "TypeScript", "ReactJS", "React Native", "Angular", "MUI", "Tailwind CSS"],
-    "backend": ["NodeJS", "Java (Spring Boot)", "iDempiere (ERP)", "REST API", "WebSocket", "Keycloak"],
+    "frontend": ["ReactJS", "React Native", "TypeScript", "JavaScript", "Angular", "HTML", "CSS", "MUI", "Tailwind CSS"],
+    "backend": ["Java (Spring Boot)", "NodeJS", "REST API", "WebSocket", "iDempiere (ERP)", "Keycloak"],
     "platform": ["Web", "Android", "iOS"],
-    "database": ["MongoDB", "MySQL", "PostgreSQL", "MariaDB", "Redis"],
+    "database": ["PostgreSQL", "MongoDB", "Redis", "MySQL", "MariaDB"],
     "devops": ["Docker", "Git", "Vercel", "Jira", "Postman"],
     "ai": ["Cursor", "GitHub Copilot", "Claude AI"],
     "soft": [
       "Problem-solving & root-cause analysis",
       "Technical leadership & team mentoring",
-      "Clear communication with stakeholders",
-      "Work independently and collaboratively",
-      "Calm under pressure & strong multitasking",
-      "Detail-oriented & quality-focused",
-      "Continuous learning & self-improvement",
-      "Agile mindset & quick adaptability",
-      "Quality-first mindset & proactive defect prevention",
-      "Ownership — take full responsibility for outcomes"
+      "Ownership — take full responsibility for outcomes",
+      "Clear communication with stakeholders"
     ],
     "softVi": [
       "Tư duy giải quyết vấn đề & phân tích gốc rễ",
       "Dẫn dắt kỹ thuật & hỗ trợ phát triển đồng đội",
-      "Giao tiếp rõ ràng với các bên liên quan",
-      "Làm việc độc lập và phối hợp nhóm hiệu quả",
-      "Ổn định dưới áp lực & xử lý đa nhiệm tốt",
-      "Tỉ mỉ & chú trọng chất lượng đầu ra",
-      "Không ngừng học hỏi & cải thiện bản thân",
-      "Tư duy Agile & thích nghi nhanh",
-      "Tư duy phòng ngừa lỗi & đảm bảo chất lượng sản phẩm",
-      "Ownership — chịu trách nhiệm đến cùng với kết quả"
+      "Ownership — chịu trách nhiệm đến cùng với kết quả",
+      "Giao tiếp rõ ràng với các bên liên quan"
     ]
   },
   "achievements": [
@@ -102,42 +90,24 @@
       "location": "387 - 389 Ba Trung Street, District 3, Ho Chi Minh City",
       "roles": [
         {
-          "titleEn": "Mobile & Web Application Developer",
-          "titleVi": "Lập Trình Viên Mobile & Web",
-          "period": "SEP 2022 - AUG 2024",
-          "skills": "React Native / ReactJS / Node.js 18",
+          "titleEn": "Full-Stack Engineer → Head of Department",
+          "titleVi": "Lập Trình Viên Full-Stack → Trưởng Bộ Phận",
+          "period": "SEP 2022 - MAY 2026",
+          "skills": "React Native / ReactJS / Node.js / Java Spring Boot / PostgreSQL / MongoDB / Redis / iDempiere",
           "bullets": {
             "en": [
-              "Built F-Hub — internal mobile app serving 3,000+ users across 140 FAHASA bookstores, covering daily operations: reporting, task tracking, workflow approvals, leaderboard rankings, product lookup, inventory inspection, and stock counting",
-              "Eliminated 2+ hours of manual operations per employee daily by digitizing end-to-end business workflows — equivalent to 6,000+ person-hours saved across the company each day",
-              "Implemented real-time features (WebSocket), file upload handling, and secure communication with internal APIs",
-              "Delivered companion admin dashboard (ReactJS) for back-office user management, activity monitoring, and operational analytics"
+              "Built F-Hub — internal mobile app (React Native + NodeJS) serving 3,000+ users across 140 FAHASA bookstores; digitized end-to-end business workflows eliminating 2+ hours of manual work per employee daily — equivalent to 6,000+ person-hours saved company-wide each day",
+              "Delivered companion admin dashboard (ReactJS) for user management, activity monitoring, and operational analytics; implemented real-time features via WebSocket",
+              "Promoted to Head of Department within 2 years — led 10-person engineering team across recruitment, mentoring, sprint planning, and system architecture",
+              "Optimized iDempiere ERP (Java + PostgreSQL) by archiving 5 years of historical data and purging redundant indexes — cut document processing time from 10 minutes to under 2 minutes for 3,000+ daily users",
+              "Architected Dev & Ops Dashboard (React 19 + Spring Boot 3 + Java 21) replacing ad-hoc Excel tracking — real-time visibility into cluster health, POS sync, DB backup, and Keycloak SSO; reduced user support time from half a day to 30 minutes"
             ],
             "vi": [
-              "Xây dựng F-Hub — ứng dụng mobile nội bộ phục vụ 3.000+ người dùng tại 140 nhà sách Fahasa, bao gồm: báo cáo, theo dõi công việc, phê duyệt quy trình, bảng xếp hạng, tra cứu sản phẩm, kiểm hàng và kiểm kê kho",
-              "Xóa bỏ 2+ giờ thao tác thủ công mỗi ngày/nhân viên bằng cách số hóa toàn bộ quy trình nghiệp vụ — tương đương 6.000+ giờ công tiết kiệm cho toàn công ty mỗi ngày",
-              "Triển khai tính năng real-time (WebSocket), xử lý upload file và kết nối bảo mật với API nội bộ",
-              "Phát triển dashboard quản trị (ReactJS) hỗ trợ quản lý người dùng, theo dõi hoạt động và phân tích dữ liệu vận hành"
-            ]
-          }
-        },
-        {
-          "titleEn": "Head of Department — System Software Development",
-          "titleVi": "Trưởng Bộ Phận — Phòng Phát Triển Phần Mềm Hệ Thống",
-          "period": "SEP 2024 - MAY 2026",
-          "skills": "iDempiere / Java 8 / Java 21 / Spring Boot 3 / PostgreSQL / MongoDB / Redis / ReactJS",
-          "bullets": {
-            "en": [
-              "Led 10-person software engineering team — overseeing recruitment, mentoring, sprint planning, and system architecture for enterprise solutions serving 3,000+ users across 140 stores",
-              "Optimized iDempiere ERP database performance by archiving historical data (2020–2024) into a dedicated DB and purging redundant indexes — reducing document processing time from 10 minutes to under 2 minutes for 3,000+ daily users",
-              "Delivered custom iDempiere ERP modules and catalog synchronization engine across Fahasa and Fabico tenants, automating enterprise-wide workflows and replacing paper-based processes company-wide",
-              "Architected Dev & Ops Dashboard (React 19 + Spring Boot 3 + Java 21) replacing ad-hoc Excel tracking — providing real-time visibility into cluster health, POS sync, DB backup, standby replication, and Keycloak SSO; reduced user support time from half a day to 30 minutes"
-            ],
-            "vi": [
-              "Dẫn dắt đội 10 kỹ sư phần mềm — phụ trách tuyển dụng, mentoring, lập kế hoạch sprint và kiến trúc hệ thống phục vụ 3.000+ người dùng tại 140 nhà sách",
-              "Tối ưu hiệu năng ERP iDempiere: phân tách dữ liệu lịch sử (2020–2024) sang DB lưu trữ riêng và dọn dẹp index dư thừa — giảm thời gian xử lý chứng từ từ 10 phút xuống dưới 2 phút cho 3.000+ người dùng hàng ngày",
-              "Phát triển module iDempiere tùy chỉnh và cơ chế đồng bộ danh mục giữa tenant Fahasa và Fabico, tự động hóa quy trình nghiệp vụ toàn doanh nghiệp và thay thế hoàn toàn quy trình giấy tờ thủ công",
-              "Xây dựng Dashboard Dev & Ops (React 19 + Spring Boot 3 + Java 21) thay thế Excel thủ công — cung cấp giám sát real-time về health cluster, POS sync, backup DB, replication và Keycloak SSO; giảm thời gian hỗ trợ người dùng từ nửa ngày xuống còn 30 phút"
+              "Xây dựng F-Hub — ứng dụng mobile (React Native + NodeJS) phục vụ 3.000+ người dùng tại 140 nhà sách Fahasa; số hóa toàn bộ quy trình nghiệp vụ, xóa bỏ 2+ giờ thao tác thủ công/ngày/nhân viên — tương đương 6.000+ giờ công tiết kiệm cho toàn công ty mỗi ngày",
+              "Phát triển dashboard quản trị (ReactJS) hỗ trợ quản lý người dùng, theo dõi hoạt động và phân tích vận hành; tích hợp real-time qua WebSocket",
+              "Được thăng chức Trưởng Bộ Phận sau 2 năm — dẫn dắt đội 10 kỹ sư phụ trách tuyển dụng, mentoring, lập kế hoạch sprint và kiến trúc hệ thống",
+              "Tối ưu ERP iDempiere (Java + PostgreSQL): phân tách 5 năm dữ liệu lịch sử sang DB riêng, dọn dẹp index dư thừa — giảm thời gian xử lý chứng từ từ 10 phút xuống dưới 2 phút cho 3.000+ người dùng hàng ngày",
+              "Xây dựng Dashboard Dev & Ops (React 19 + Spring Boot 3 + Java 21) thay thế Excel thủ công — giám sát real-time cluster health, POS sync, backup DB, Keycloak SSO; giảm thời gian hỗ trợ từ nửa ngày xuống 30 phút"
             ]
           }
         }
@@ -149,7 +119,7 @@
       "name": "Vietnamese",
       "nameVi": "Tiếng Việt",
       "level": "Native",
-      "levelVi": "Bản ngữ"
+      "levelVi": "Tiếng mẹ đẻ"
     },
     {
       "name": "English",

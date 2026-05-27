@@ -42,6 +42,8 @@
 [data-theme="dark"] #download-btn:hover   { background: #daa44c; }
 [data-theme="dark"] .ctrl-btn             { background: #1c2535; border-color: #2d3c50; box-shadow: 0 2px 8px rgba(0,0,0,.4); }
 [data-theme="dark"] .ctrl-btn:hover       { border-color: var(--accent); color: var(--accent); }
+[data-theme="dark"] .language-item        { border-color: #2d3c50; background: color-mix(in srgb, var(--text) 4%, transparent); }
+[data-theme="dark"] .language-name        { color: var(--text); }
 
 /* ─── RESET ──────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

@@ -13,8 +13,7 @@ export const CVControls: React.FC = () => {
     <>
       <div id="cv-controls" style={{ position: 'fixed', top: 16, right: 20, display: 'flex', gap: 8, zIndex: 200 }}>
         <button onClick={toggleLang} className="ctrl-btn" title="Toggle language">
-          <Globe size={13} />
-          <span>{lang === 'en' ? 'VI' : 'EN'}</span>
+          <span>{lang === 'en' ? '🇻🇳 VI' : '🇬🇧 EN'}</span>
         </button>
         <button onClick={toggleDark} className="ctrl-btn" title="Toggle dark mode">
           {isDark ? <Sun size={16} /> : <Moon size={16} />}
