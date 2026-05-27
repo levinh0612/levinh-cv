@@ -38,11 +38,11 @@
     "period": "SEP 2018 - OCT 2022"
   },
   "skills": {
-    "frontend": ["ReactJS", "React Native", "TypeScript", "JavaScript", "Angular", "HTML", "CSS", "MUI", "Tailwind CSS"],
+    "frontend": ["ReactJS", "React Native", "Next.js", "TypeScript", "JavaScript", "Redux Toolkit", "Zustand", "Context API", "Angular", "HTML", "CSS", "MUI", "Tailwind CSS"],
     "backend": ["Java (Spring Boot)", "NodeJS", "REST API", "WebSocket", "iDempiere (ERP)", "Keycloak"],
     "platform": ["Web", "Android", "iOS"],
     "database": ["PostgreSQL", "MongoDB", "Redis", "MySQL", "MariaDB"],
-    "devops": ["Docker", "Git", "Vercel", "Jira", "Postman"],
+    "devops": ["Docker", "Git", "Vite", "Vercel", "Jira", "Postman"],
     "ai": ["Cursor", "GitHub Copilot", "Claude AI"],
     "soft": [
       "Problem-solving & root-cause analysis",
@@ -124,8 +124,8 @@
     {
       "name": "English",
       "nameVi": "Tiếng Anh",
-      "level": "Intermediate — actively improving",
-      "levelVi": "Trung cấp — đang cải thiện"
+      "level": "Upper-Intermediate — actively improving",
+      "levelVi": "Khá — đang cải thiện tích cực"
     }
   ],
   "hobbies": [
