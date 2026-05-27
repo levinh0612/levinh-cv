@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Globe, Moon, Sun, Download, Settings, Rocket } from 'lucide-react';
+import { Moon, Sun, Download, Settings, Rocket } from 'lucide-react';
 import { useCV } from '../context/CVContext';
 
 const IS_LOCAL = import.meta.env.DEV;
