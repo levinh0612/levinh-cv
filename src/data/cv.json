@@ -39,7 +39,7 @@
   },
   "skills": {
     "frontend": ["ReactJS", "React Native", "Next.js", "TypeScript", "JavaScript", "Redux Toolkit", "Zustand", "Context API", "Angular", "HTML", "CSS", "MUI", "Tailwind CSS"],
-    "backend": ["Java (Spring Boot)", "NodeJS", "REST API", "WebSocket", "iDempiere (ERP)", "Keycloak"],
+    "backend": ["Java (Spring Boot)", "NodeJS", "REST API", "WebSocket", "Apache Kafka", "iDempiere (ERP)", "Keycloak"],
     "platform": ["Web", "Android", "iOS"],
     "database": ["PostgreSQL", "MongoDB", "Redis", "MySQL", "MariaDB"],
     "devops": ["Docker", "Git", "Vite", "Vercel", "Jira", "Postman"],
@@ -93,13 +93,14 @@
           "titleEn": "Full-Stack Engineer → Head of Department",
           "titleVi": "Lập Trình Viên Full-Stack → Trưởng Bộ Phận",
           "period": "SEP 2022 - MAY 2026",
-          "skills": "React Native / ReactJS / Node.js / Java Spring Boot / PostgreSQL / MongoDB / Redis / iDempiere",
+          "skills": "React Native / ReactJS / Node.js / Java Spring Boot / Apache Kafka / PostgreSQL / MongoDB / Redis / iDempiere",
           "bullets": {
             "en": [
               "Built F-Hub — internal mobile app (React Native + NodeJS) serving 3,000+ users across 140 FAHASA bookstores; digitized end-to-end business workflows eliminating 2+ hours of manual work per employee daily — equivalent to 6,000+ person-hours saved company-wide each day",
               "Delivered companion admin dashboard (ReactJS) for user management, activity monitoring, and operational analytics; implemented real-time features via WebSocket",
               "Promoted to Head of Department within 2 years — led 10-person engineering team across recruitment, mentoring, sprint planning, and system architecture",
               "Optimized iDempiere ERP (Java + PostgreSQL) by archiving 5 years of historical data and purging redundant indexes — cut document processing time from 10 minutes to under 2 minutes for 3,000+ daily users",
+              "Designed and maintained a real-time POS-to-ERP sync pipeline (Apache Kafka + Spring Boot producer/consumer services) streaming sales tickets from 140 stores into iDempiere within seconds — with offset tracking, version-controlled consumer rollover, and automated error retry/alerting",
               "Architected Dev & Ops Dashboard (React 19 + Spring Boot 3 + Java 21) replacing ad-hoc Excel tracking — real-time visibility into cluster health, POS sync, DB backup, and Keycloak SSO; reduced user support time from half a day to 30 minutes"
             ],
             "vi": [
@@ -107,6 +108,7 @@
               "Phát triển dashboard quản trị (ReactJS) hỗ trợ quản lý người dùng, theo dõi hoạt động và phân tích vận hành; tích hợp real-time qua WebSocket",
               "Được thăng chức Trưởng Bộ Phận sau 2 năm — dẫn dắt đội 10 kỹ sư phụ trách tuyển dụng, mentoring, lập kế hoạch sprint và kiến trúc hệ thống",
               "Tối ưu ERP iDempiere (Java + PostgreSQL): phân tách 5 năm dữ liệu lịch sử sang DB riêng, dọn dẹp index dư thừa — giảm thời gian xử lý chứng từ từ 10 phút xuống dưới 2 phút cho 3.000+ người dùng hàng ngày",
+              "Thiết kế và vận hành pipeline đồng bộ POS → ERP theo thời gian thực (Apache Kafka + Spring Boot producer/consumer) — đưa dữ liệu bán hàng từ 140 nhà sách vào iDempiere chỉ trong vài giây, có theo dõi offset, version control để chuyển đổi consumer an toàn và tự động retry/cảnh báo lỗi",
               "Xây dựng Dashboard Dev & Ops (React 19 + Spring Boot 3 + Java 21) thay thế Excel thủ công — giám sát real-time cluster health, POS sync, backup DB, Keycloak SSO; giảm thời gian hỗ trợ từ nửa ngày xuống 30 phút"
             ]
           }
