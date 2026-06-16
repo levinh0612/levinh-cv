@@ -1004,9 +1004,9 @@ body { padding: 40px 20px 120px; line-height: 1.6; }
 #download-btn { animation: btnGlow 3s ease-in-out infinite; }
 #download-btn:hover { animation: none; }
 
-/* ─── PRINT ──────────────────────────────────────────────────── */
+/* ─── PRINT — TopCV-style single-column ──────────────────────── */
 @media print {
-  @page { size: A4; margin: 12mm 14mm; }
+  @page { size: A4; margin: 14mm 16mm; }
 
   *, *::before, *::after {
     -webkit-print-color-adjust: exact !important;
@@ -1016,166 +1016,181 @@ body { padding: 40px 20px 120px; line-height: 1.6; }
 
   html, body {
     background: white !important;
-    padding: 0 !important;
-    margin: 0 !important;
+    padding: 0 !important; margin: 0 !important;
     min-height: unset !important;
+    font-size: 9.5pt !important;
+    color: #111 !important;
   }
 
-  /* Hide all UI chrome */
-  #cv-controls,
-  #download-btn,
-  [data-portal],
-  .lightbox-overlay { display: none !important; }
-
-  /* Remove body background so only CV card shows */
+  /* ── Hide UI chrome ── */
+  #cv-controls, #download-btn, [data-portal], .lightbox-overlay { display: none !important; }
   #root { background: white !important; }
-
-  /* CV card fills the page */
   #cv-content {
-    box-shadow: none !important;
-    max-width: 100% !important;
-    width: 100% !important;
-    margin: 0 !important;
-    animation: none !important;
-    overflow: visible !important;
+    box-shadow: none !important; max-width: 100% !important;
+    width: 100% !important; margin: 0 !important;
+    animation: none !important; overflow: visible !important;
   }
 
-  /* Disable all scroll-reveal & entrance animations in print */
-  .reveal, .reveal-stagger, .reveal-left,
-  .reveal > *, .reveal-stagger > * {
-    opacity: 1 !important;
-    transform: none !important;
-    transition: none !important;
-    animation: none !important;
+  /* ── Disable animations ── */
+  .reveal, .reveal-stagger, .reveal-left, .reveal > *, .reveal-stagger > * {
+    opacity: 1 !important; transform: none !important;
+    transition: none !important; animation: none !important;
   }
-  .tag-list .skill-chip { opacity: 1 !important; transform: none !important; }
-  .header-enter-1, .header-enter-2, .header-enter-3,
+  .tag-list .skill-chip, .header-enter-1, .header-enter-2, .header-enter-3,
   .header-enter-4, .header-enter-5, .avatar-enter {
     opacity: 1 !important; transform: none !important; animation: none !important;
   }
 
-  /* Remove manual side padding — @page margin handles all sides */
-  .cv-header { padding: 6mm 0 6px !important; }
-  .cv-body   { padding: 0 0 8px !important; }
-  .cv-footer { padding: 6px 0 8mm !important; }
+  /* ── Hide non-print sections ── */
+  .section-objective, .section-hobbies,
+  .skills-ai-section, .skills-soft-section { display: none !important; }
 
-  /* Boost font readability for print */
-  body { font-size: 10.5pt !important; }
-  .name { font-size: 2rem !important; }
-  .about-text, .objective-text, .role-bullet { font-size: 9.5pt !important; line-height: 1.7 !important; }
-  .skill-chip, .meta-chip, .contact-item { font-size: 8.5pt !important; }
-
-  /* Avatar print size */
-  .avatar-img {
-    width: 88px !important;
-    height: 118px !important;
-    object-fit: cover !important;
-    object-position: center 10% !important;
+  /* ── FULL VISUAL RESET — white, no cards ── */
+  .cv-header, .header-grid, .about-card, .objective-card,
+  .role-card, .company-block, .company-header,
+  .skill-card, .skills-card-grid, .edu-card,
+  .ach-card, .ach-card-main, .ach-cards,
+  .contact-item, .meta-chip, .skill-chip, .stack-chip,
+  .edu-period-badge, .company-period, .role-period,
+  .edu-classification, .ach-badge, .ach-year-pill, .gpa-badge {
+    background: none !important; background-color: transparent !important;
+    background-image: none !important; box-shadow: none !important;
+    border-radius: 0 !important;
   }
 
-  /* Hide placeholder proof images */
-  .ach-proof-placeholder { display: none !important; }
-
-  /* Achievement images: small in layout, high-res data for zoom */
-  .ach-card {
-    flex-direction: row !important;
-    align-items: center !important;
+  /* ── HEADER ── */
+  .cv-header { padding: 0 0 6pt !important; border-bottom: none !important; }
+  .header-avatar { display: none !important; }
+  .header-grid { grid-template-columns: 1fr !important; gap: 0 !important; }
+  .name {
+    font-size: 18pt !important; font-weight: 700 !important;
+    color: #000 !important; text-align: center !important;
+    letter-spacing: 0 !important; line-height: 1.2 !important;
+    margin-bottom: 2pt !important;
   }
-  .ach-proof {
-    width: 60px !important;
-    height: 45px !important;
-    flex-shrink: 0 !important;
-    overflow: hidden !important;
-    position: relative !important;
+  .job-title-line { text-align: center !important; margin-top: 0 !important; }
+  .job-title { font-size: 9pt !important; color: #333 !important; font-weight: 400 !important; font-style: italic !important; }
+  /* Contact rows: centered, small */
+  .header-meta { justify-content: center !important; flex-wrap: wrap !important; gap: 4px 10px !important; margin-top: 3pt !important; }
+  .contact-row { justify-content: center !important; flex-wrap: wrap !important; gap: 4px 10px !important; margin-top: 2pt !important; }
+  .meta-sep, .contact-sep { display: none !important; }
+  .meta-chip, .contact-item {
+    border: none !important; padding: 0 !important;
+    font-size: 8.5pt !important; color: #333 !important; font-weight: 400 !important;
   }
-  .ach-proof img {
-    /* Fill the container — browser embeds at container size × device DPI */
-    position: absolute !important;
-    inset: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    image-rendering: high-quality !important;
+  /* ── SECTION HEADINGS — TopCV style ── */
+  .section-heading-block {
+    border: none !important;
+    border-bottom: 1pt solid #000 !important;
+    padding: 0 0 2pt !important;
+    margin-bottom: 5pt !important;
+    margin-top: 2pt !important;
+  }
+  .section-heading-block span {
+    font-size: 10pt !important; font-weight: 800 !important;
+    color: #000 !important; letter-spacing: 0.04em !important;
+    text-transform: uppercase !important;
   }
 
-  /* Page break control */
-  .company-block,
-  .role-card,
-  .ach-card,
-  .edu-card,
-  .skill-row,
-  .skill-card,
-  .skills-card-grid,
-  .skills-ai-section,
-  .skills-soft-section,
-  .hobby-flex { page-break-inside: avoid; break-inside: avoid; }
+  /* ── ABOUT ── */
+  .about-card { border: none !important; padding: 0 !important; }
+  .about-text { font-size: 9pt !important; line-height: 1.55 !important; color: #111 !important; }
 
+  /* ── SKILLS: "Label: item1, item2, ..." ── */
+  .skills-card-grid { display: block !important; margin-bottom: 0 !important; }
+  .skill-card { display: block !important; border: none !important; border-top: none !important; padding: 0 !important; margin-bottom: 2pt !important; }
+  .skill-card-label {
+    display: inline !important; font-size: 9pt !important;
+    font-weight: 700 !important; color: #111 !important;
+    text-transform: none !important; letter-spacing: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .skill-card-label::after { content: ": "; font-weight: 400; }
+  .tag-list { display: inline !important; }
+  .skill-chip {
+    display: inline !important; border: none !important; padding: 0 !important;
+    font-size: 9pt !important; font-weight: 400 !important; color: #111 !important;
+    cursor: default !important; transform: none !important;
+  }
+  .skill-chip::after { content: ", "; }
+  .skill-chip:last-child::after { content: ""; }
+
+  /* ── EDUCATION ── */
+  .edu-card { border: none !important; padding: 0 !important; }
+  .edu-card-top { display: flex !important; justify-content: space-between !important; align-items: baseline !important; }
+  .edu-school { font-size: 9.5pt !important; font-weight: 700 !important; color: #000 !important; }
+  .edu-period-badge { border: none !important; padding: 0 !important; font-size: 8.5pt !important; color: #333 !important; font-weight: 400 !important; background: none !important; }
+  .edu-degree-row { margin: 1pt 0 !important; }
+  .edu-degree-text { font-size: 9pt !important; color: #111 !important; font-weight: 400 !important; font-style: italic !important; }
+  .edu-classification { background: none !important; border: none !important; color: #333 !important; font-size: 9pt !important; padding: 0 !important; font-weight: 700 !important; }
+  .edu-card-body { margin-top: 1pt !important; }
+  .edu-field { font-size: 8.5pt !important; color: #333 !important; }
+  .edu-field-label { font-size: 8.5pt !important; font-weight: 700 !important; }
+  .gpa-badge { border: none !important; background: none !important; color: #333 !important; font-size: 8.5pt !important; padding: 0 !important; font-weight: 700 !important; }
+
+  /* ── ACHIEVEMENTS: text only, no photos ── */
+  .ach-proof, .ach-proof-placeholder { display: none !important; }
+  .ach-cards { display: flex !important; flex-direction: column !important; gap: 4pt !important; }
+  .ach-card { display: block !important; border: none !important; padding: 0 !important; }
+  .ach-card-main { display: flex !important; flex-direction: row !important; align-items: baseline !important; gap: 8pt !important; }
+  .ach-year-pill { flex-shrink: 0 !important; min-width: 28pt !important; font-size: 8.5pt !important; font-weight: 700 !important; color: #000 !important; border: none !important; padding: 0 !important; }
+  .ach-card-info { flex: 1 !important; }
+  .ach-title { font-size: 9pt !important; font-weight: 400 !important; color: #111 !important; line-height: 1.4 !important; display: block !important; }
+  .ach-org { font-size: 8.5pt !important; color: #555 !important; }
+  .ach-badge { display: none !important; }
+
+  /* ── WORK EXPERIENCE ── */
+  .company-block { border: none !important; padding: 0 !important; margin-bottom: 6pt !important; }
+  .company-header {
+    display: flex !important; justify-content: space-between !important;
+    align-items: baseline !important; border: none !important; background: none !important;
+  }
+  .company-name { font-size: 10pt !important; font-weight: 700 !important; color: #000 !important; text-transform: uppercase !important; }
+  .company-period { border: none !important; padding: 0 !important; font-size: 8.5pt !important; color: #333 !important; font-weight: 400 !important; }
+  .company-location { font-size: 8pt !important; color: #666 !important; margin-bottom: 3pt !important; }
+  .roles-list { gap: 5pt !important; }
+  .role-card { border: none !important; padding: 0 !important; }
+  .role-top { display: flex !important; justify-content: space-between !important; align-items: baseline !important; }
+  .role-title { font-size: 9.5pt !important; font-weight: 700 !important; color: #000 !important; font-style: italic !important; }
+  .role-period { border: none !important; padding: 0 !important; font-size: 8.5pt !important; color: #333 !important; font-weight: 400 !important; }
+  .role-skills-line { margin: 2pt 0 4pt !important; gap: 4pt !important; }
+  .skill-pfx { font-size: 8pt !important; font-weight: 700 !important; color: #333 !important; flex-shrink: 0 !important; }
+  .stack-chips { display: inline-flex !important; flex-wrap: wrap !important; gap: 0 !important; }
+  .stack-chip {
+    display: inline !important; border: none !important; padding: 0 !important;
+    font-size: 8.5pt !important; color: #333 !important; background: none !important;
+  }
+  .stack-chip::after { content: " · "; color: #999 !important; }
+  .stack-chip:last-child::after { content: "" !important; }
+  .role-bullets { gap: 3pt !important; padding-left: 0 !important; margin: 0 !important; }
+  .role-bullet { font-size: 9pt !important; line-height: 1.55 !important; color: #111 !important; gap: 6pt !important; }
+  .bullet-arrow { color: #555 !important; font-size: 9pt !important; }
+
+  /* ── LANGUAGES ── */
+  .languages-list { display: flex !important; flex-direction: column !important; gap: 2pt !important; }
+  .language-item { border: none !important; background: none !important; padding: 0 !important; display: flex !important; gap: 8pt !important; align-items: baseline !important; }
+  .language-name { font-size: 9pt !important; font-weight: 700 !important; color: #000 !important; }
+  .language-level { font-size: 8.5pt !important; color: #333 !important; font-weight: 400 !important; }
+
+  /* ── PAGE BREAKS ── */
+  .role-card, .ach-card, .edu-card { page-break-inside: avoid; break-inside: avoid; }
   .section-heading-block { page-break-after: avoid; break-after: avoid; }
   .cv-header { page-break-after: avoid; break-after: avoid; }
 
-  /* ── 2-column print layout (flexbox — reliable in Chrome print) ── */
-  .cv-body {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: flex-start !important;
-    gap: 0 !important;
-    padding: 0 !important;
-  }
-
-  /* Sidebar — LEFT 35% */
-  .print-col-side {
-    display: flex !important;
-    flex-direction: column !important;
-    flex: 0 0 35% !important;
-    order: 1 !important;
-    padding-right: 14pt !important;
-    border-right: 1pt solid #d0d0d0 !important;
+  /* ── SINGLE COLUMN LAYOUT ── */
+  .cv-body { display: block !important; padding: 0 !important; }
+  .print-col-main, .print-col-side {
+    display: block !important; width: 100% !important;
+    border: none !important; padding: 0 !important;
+    flex: none !important; order: unset !important;
     box-sizing: border-box !important;
-    min-width: 0 !important;
   }
-
-  /* Main content — RIGHT 65% */
-  .print-col-main {
-    display: flex !important;
-    flex-direction: column !important;
-    flex: 1 1 0 !important;
-    order: 2 !important;
-    padding-left: 6pt !important;
-    box-sizing: border-box !important;
-    min-width: 0 !important;
-  }
-
-  /* Hide Objective, Hobbies, AI tools and Soft skills in print */
-  .section-objective,
-  .section-hobbies,
-  .skills-ai-section,
-  .skills-soft-section { display: none !important; }
-
-  /* Force skills card grid to single column in narrow sidebar */
-  .print-col-side .skills-card-grid {
-    grid-template-columns: 1fr !important;
-    gap: 5px !important;
-  }
-
-  /* Compact section spacing */
-  .print-col-main > div { margin-bottom: 5pt !important; }
+  /* Sections spacing */
+  .print-col-main > div,
   .print-col-side > div { margin-bottom: 8pt !important; }
-  .print-col-side .section-heading-block { margin-bottom: 4pt !important; }
-  .print-col-main .section-heading-block { margin-bottom: 5pt !important; }
-
-  /* Compact sidebar chips */
-  .print-col-side .tag-list { gap: 3px !important; }
-  .print-col-side .skill-chip { font-size: 7pt !important; padding: 1px 6px !important; }
-  .print-col-side .skill-card { margin-bottom: 0 !important; }
-  .print-col-side .skill-card-label { margin-bottom: 5px !important; font-size: 6.5pt !important; }
-  .print-col-side .edu-card { padding: 8px 10px !important; }
-  .print-col-side .edu-degree-text { font-size: 7.5pt !important; }
-
-  /* Compact right column bullets and about */
-  .role-bullet { font-size: 9pt !important; line-height: 1.5 !important; }
-  .about-text  { font-size: 9pt !important; line-height: 1.5 !important; }
-  .stack-chips { gap: 3px !important; }
-  .role-bullets { gap: 4px !important; }
+  .cv-header { padding: 0 0 6pt !important; }
+  .cv-body { padding: 4pt 0 0 !important; }
+  .cv-footer { padding: 4pt 0 !important; }
 }
 
 /* ─── RESPONSIVE ─────────────────────────────────────────────── */
