@@ -2,12 +2,14 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Moon, Sun, Download, Settings, Rocket } from 'lucide-react';
 import { useCV } from '../context/CVContext';
+import { usePrintPDF } from '../hooks/usePrintPDF';
 
 const IS_LOCAL = import.meta.env.DEV;
 
 export const CVControls: React.FC = () => {
   const navigate = useNavigate();
   const { lang, toggleLang, isDark, toggleDark } = useCV();
+  const { downloadPDF } = usePrintPDF();
 
   return (
     <>
@@ -32,16 +34,15 @@ export const CVControls: React.FC = () => {
         )}
       </div>
 
-      <a
+      <button
         id="download-btn"
-        href="/cv-en.pdf"
-        download="[FullStack][NguyenHuuLeVinh][EN].pdf"
-        style={{ position: 'fixed', bottom: 28, right: 28, zIndex: 100, textDecoration: 'none' }}
+        onClick={() => downloadPDF(lang, isDark)}
+        style={{ position: 'fixed', bottom: 28, right: 28, zIndex: 100 }}
         title={lang === 'en' ? 'Download PDF' : 'Tải CV PDF'}
       >
         <Download size={14} />
         <span>{lang === 'en' ? 'Download PDF' : 'Tải CV PDF'}</span>
-      </a>
+      </button>
     </>
   );
 };
