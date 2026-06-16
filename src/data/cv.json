@@ -96,17 +96,19 @@
           "titleVi": "Trưởng Bộ Phận — Phòng Phát Triển Phần Mềm Hệ Thống",
           "period": "AUG 2025 - JUN 2026",
           "periodVi": "Tháng 8/2025 - Tháng 6/2026",
-          "skills": "Java 21 / Spring Boot / ReactJS / AngularJS / Apache Kafka / Keycloak / JWT / PostgreSQL / Redis / MongoDB / iDempiere",
+          "skills": "Java 8 / Java 21 / Spring Boot / ReactJS / AngularJS / Apache Kafka / Keycloak / JWT / PostgreSQL / Redis / MongoDB / iDempiere / Jira",
           "bullets": {
             "en": [
-              "Led the engineering team across recruitment, mentoring, sprint planning, and system architecture",
+              "Led the engineering team across recruitment, mentoring, sprint planning (Jira), and system architecture",
               "Owned iDempiere ERP platform reliability — optimized document-processing workflows and heavy SQL queries, cutting processing time from 10+ minutes to under 2 minutes for 3,000+ daily users; maintained real-time order sync pipeline (Apache Kafka + Spring Boot) from 140 stores with automated error retry and alerting",
-              "Built IT Operations Dashboard (ReactJS + Spring Boot + Java 21) enabling the ops team to self-serve system status and issue diagnosis — eliminated the ops → dev → user support loop, reducing average response time from hours to under 30 minutes"
+              "Built IT Operations Dashboard (ReactJS + Spring Boot + Java 21) enabling the ops team to self-serve system status and issue diagnosis — eliminated the ops → dev → user support loop, reducing average response time from hours to under 30 minutes",
+              "Built a self-service invoice portal (ReactJS + Spring Boot) allowing customers to proactively generate and export their own invoices — reducing manual workload on the operations team"
             ],
             "vi": [
-              "Dẫn dắt đội kỹ sư phụ trách tuyển dụng, mentoring, lập kế hoạch sprint và kiến trúc hệ thống",
+              "Dẫn dắt đội kỹ sư phụ trách tuyển dụng, mentoring, lập kế hoạch sprint (Jira) và kiến trúc hệ thống",
               "Chịu trách nhiệm vận hành và hiệu suất ERP iDempiere — tối ưu quy trình xử lý chứng từ và các câu query nặng, giảm thời gian xử lý từ 10+ phút xuống dưới 2 phút cho 3.000+ người dùng hàng ngày; duy trì pipeline đồng bộ đơn hàng thời gian thực (Apache Kafka + Spring Boot) từ 140 nhà sách với cơ chế retry và cảnh báo lỗi tự động",
-              "Xây dựng Dashboard Vận Hành IT (ReactJS + Spring Boot + Java 21) giúp bộ phận vận hành tự truy xuất kiểm tra trạng thái hệ thống và chẩn đoán sự cố — loại bỏ vòng lặp hỗ trợ ops → dev → user, giảm thời gian phản hồi từ hàng giờ xuống dưới 30 phút"
+              "Xây dựng Dashboard Vận Hành IT (ReactJS + Spring Boot + Java 21) giúp bộ phận vận hành tự truy xuất kiểm tra trạng thái hệ thống và chẩn đoán sự cố — loại bỏ vòng lặp hỗ trợ ops → dev → user, giảm thời gian phản hồi từ hàng giờ xuống dưới 30 phút",
+              "Xây dựng web tự phục vụ (ReactJS + Spring Boot) cho phép khách hàng chủ động xuất hoá đơn — giảm tải xử lý thủ công cho bộ phận vận hành"
             ]
           }
         },
