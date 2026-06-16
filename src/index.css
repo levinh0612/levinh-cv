@@ -405,7 +405,7 @@ body { padding: 40px 20px 120px; line-height: 1.6; }
 
 /* Print column wrappers — transparent in web view */
 .print-col-main,
-.print-col-side { display: contents; }
+.print-col-side { display: block; }
 
 .gpa-badge {
   display: inline-flex;
@@ -1082,8 +1082,8 @@ body { padding: 40px 20px 120px; line-height: 1.6; }
     align-items: center !important;
   }
   .ach-proof {
-    width: 90px !important;
-    height: 68px !important;
+    width: 60px !important;
+    height: 45px !important;
     flex-shrink: 0 !important;
     overflow: hidden !important;
     position: relative !important;
@@ -1113,46 +1113,69 @@ body { padding: 40px 20px 120px; line-height: 1.6; }
   .section-heading-block { page-break-after: avoid; break-after: avoid; }
   .cv-header { page-break-after: avoid; break-after: avoid; }
 
-  /* ── 2-column print layout ──────────────────────────── */
+  /* ── 2-column print layout (flexbox — reliable in Chrome print) ── */
   .cv-body {
-    display: grid !important;
-    grid-template-columns: 35% 65%;
-    grid-template-rows: auto;
-    gap: 0 18pt;
-    align-items: start;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 0 !important;
     padding: 0 !important;
   }
 
+  /* Sidebar — LEFT 35% */
   .print-col-side {
     display: flex !important;
-    flex-direction: column;
-    grid-column: 1;
-    grid-row: 1;
-    padding-right: 10pt;
-    border-right: 1pt solid #d0d0d0;
-    min-width: 0;
+    flex-direction: column !important;
+    flex: 0 0 35% !important;
+    order: 1 !important;
+    padding-right: 14pt !important;
+    border-right: 1pt solid #d0d0d0 !important;
+    box-sizing: border-box !important;
+    min-width: 0 !important;
   }
 
+  /* Main content — RIGHT 65% */
   .print-col-main {
     display: flex !important;
-    flex-direction: column;
-    grid-column: 2;
-    grid-row: 1;
-    min-width: 0;
+    flex-direction: column !important;
+    flex: 1 1 0 !important;
+    order: 2 !important;
+    padding-left: 6pt !important;
+    box-sizing: border-box !important;
+    min-width: 0 !important;
   }
 
-  /* Hide Objective and Hobbies in print */
+  /* Hide Objective, Hobbies, AI tools and Soft skills in print */
   .section-objective,
-  .section-hobbies { display: none !important; }
+  .section-hobbies,
+  .skills-ai-section,
+  .skills-soft-section { display: none !important; }
 
-  /* Tighter spacing in sidebar */
-  .print-col-side > div { margin-bottom: 12pt !important; }
-  .print-col-side .section-heading-block { margin-bottom: 5pt !important; }
-  .print-col-side .skill-card { margin-bottom: 6pt !important; }
-  .print-col-side .edu-card { padding: 10px 12px !important; }
-  .print-col-side .edu-degree-text { font-size: 8pt !important; }
-  .print-col-side .tag-list { gap: 4px !important; }
-  .print-col-side .skill-chip { font-size: 7.5pt !important; padding: 2px 7px !important; }
+  /* Force skills card grid to single column in narrow sidebar */
+  .print-col-side .skills-card-grid {
+    grid-template-columns: 1fr !important;
+    gap: 5px !important;
+  }
+
+  /* Compact section spacing */
+  .print-col-main > div { margin-bottom: 5pt !important; }
+  .print-col-side > div { margin-bottom: 8pt !important; }
+  .print-col-side .section-heading-block { margin-bottom: 4pt !important; }
+  .print-col-main .section-heading-block { margin-bottom: 5pt !important; }
+
+  /* Compact sidebar chips */
+  .print-col-side .tag-list { gap: 3px !important; }
+  .print-col-side .skill-chip { font-size: 7pt !important; padding: 1px 6px !important; }
+  .print-col-side .skill-card { margin-bottom: 0 !important; }
+  .print-col-side .skill-card-label { margin-bottom: 5px !important; font-size: 6.5pt !important; }
+  .print-col-side .edu-card { padding: 8px 10px !important; }
+  .print-col-side .edu-degree-text { font-size: 7.5pt !important; }
+
+  /* Compact right column bullets and about */
+  .role-bullet { font-size: 9pt !important; line-height: 1.5 !important; }
+  .about-text  { font-size: 9pt !important; line-height: 1.5 !important; }
+  .stack-chips { gap: 3px !important; }
+  .role-bullets { gap: 4px !important; }
 }
 
 /* ─── RESPONSIVE ─────────────────────────────────────────────── */
