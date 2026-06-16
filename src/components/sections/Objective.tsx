@@ -22,7 +22,7 @@ export const ObjectiveSection: React.FC<ObjectiveSectionProps> = ({ objective })
   const text = lang === 'en' ? objective.en : objective.vi;
 
   return (
-    <div ref={ref} className={`mb-8 reveal${inView ? ' is-visible' : ''}`}>
+    <div ref={ref} className={`mb-8 reveal section-objective${inView ? ' is-visible' : ''}`}>
       <div className="section-heading-block">
         <span>{lang === 'en' ? 'OBJECTIVE' : 'MỤC TIÊU NGHỀ NGHIỆP'}</span>
       </div>

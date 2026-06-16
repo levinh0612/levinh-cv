@@ -32,6 +32,10 @@
   },
   "education": {
     "school": "Saigon University of Technology",
+    "degree": "Bachelor of Engineering — Information Technology",
+    "degreeVi": "Kỹ Sư Công Nghệ Thông Tin",
+    "classification": "Good",
+    "classificationVi": "Loại Khá",
     "major": "Information Technology",
     "subject": "Development Web",
     "gpa": "3.0 / 4",

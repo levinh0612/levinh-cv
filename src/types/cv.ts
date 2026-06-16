@@ -32,6 +32,10 @@ export interface ObjectiveSection {
 
 export interface EducationInfo {
   school: string;
+  degree?: string;
+  degreeVi?: string;
+  classification?: string;
+  classificationVi?: string;
   major: string;
   subject: string;
   gpa: string;

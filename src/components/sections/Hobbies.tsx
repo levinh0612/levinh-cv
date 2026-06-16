@@ -21,7 +21,7 @@ export const HobbiesSection: React.FC<HobbiesSectionProps> = ({ hobbies }) => {
   const { ref, inView } = useInView();
 
   return (
-    <div ref={ref} className={`mb-0 reveal-stagger${inView ? ' is-visible' : ''}`}>
+    <div ref={ref} className={`mb-0 reveal-stagger section-hobbies${inView ? ' is-visible' : ''}`}>
       <div className="section-heading-block">
         <span>{lang === 'en' ? 'HOBBIES & INTERESTS' : 'SỞ THÍCH'}</span>
       </div>

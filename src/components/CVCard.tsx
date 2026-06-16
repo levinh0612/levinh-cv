@@ -20,16 +20,22 @@ export const CVCard: React.FC = () => {
       </header>
 
       <main className="cv-body">
-        <AboutSection about={cvData.about} />
-        <ObjectiveSection objective={cvData.objective} />
-        <EducationSection education={cvData.education} />
-        <SkillsSection skills={cvData.skills} />
-        <WorkExperienceSection experience={cvData.experience} />
-        <AchievementsSection achievements={cvData.achievements} />
-        {cvData.languages && cvData.languages.length > 0 && (
-          <LanguagesSection languages={cvData.languages} />
-        )}
-        <HobbiesSection hobbies={cvData.hobbies} />
+        {/* In print: right column (main content). In web: display:contents, children flow normally */}
+        <div className="print-col-main">
+          <AboutSection about={cvData.about} />
+          <ObjectiveSection objective={cvData.objective} />
+          <WorkExperienceSection experience={cvData.experience} />
+        </div>
+        {/* In print: left column (sidebar). In web: display:contents, children flow normally */}
+        <div className="print-col-side">
+          <SkillsSection skills={cvData.skills} />
+          <EducationSection education={cvData.education} />
+          <AchievementsSection achievements={cvData.achievements} />
+          {cvData.languages && cvData.languages.length > 0 && (
+            <LanguagesSection languages={cvData.languages} />
+          )}
+          <HobbiesSection hobbies={cvData.hobbies} />
+        </div>
       </main>
 
       <footer className="cv-footer">

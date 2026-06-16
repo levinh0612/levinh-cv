@@ -372,6 +372,41 @@ body { padding: 40px 20px 120px; line-height: 1.6; }
   transition: color .3s;
 }
 
+.edu-degree-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.edu-degree-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: color .3s;
+}
+
+.edu-classification {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
+  padding: 2px 9px;
+  border-radius: 100px;
+  transition: color .3s, background .3s;
+}
+[data-theme="dark"] .edu-classification {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+/* Print column wrappers — transparent in web view */
+.print-col-main,
+.print-col-side { display: contents; }
+
 .gpa-badge {
   display: inline-flex;
   align-items: center;
@@ -1077,6 +1112,47 @@ body { padding: 40px 20px 120px; line-height: 1.6; }
 
   .section-heading-block { page-break-after: avoid; break-after: avoid; }
   .cv-header { page-break-after: avoid; break-after: avoid; }
+
+  /* ── 2-column print layout ──────────────────────────── */
+  .cv-body {
+    display: grid !important;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: auto;
+    gap: 0 18pt;
+    align-items: start;
+    padding: 0 !important;
+  }
+
+  .print-col-side {
+    display: flex !important;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 1;
+    padding-right: 10pt;
+    border-right: 1pt solid #d0d0d0;
+    min-width: 0;
+  }
+
+  .print-col-main {
+    display: flex !important;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+  }
+
+  /* Hide Objective and Hobbies in print */
+  .section-objective,
+  .section-hobbies { display: none !important; }
+
+  /* Tighter spacing in sidebar */
+  .print-col-side > div { margin-bottom: 12pt !important; }
+  .print-col-side .section-heading-block { margin-bottom: 5pt !important; }
+  .print-col-side .skill-card { margin-bottom: 6pt !important; }
+  .print-col-side .edu-card { padding: 10px 12px !important; }
+  .print-col-side .edu-degree-text { font-size: 8pt !important; }
+  .print-col-side .tag-list { gap: 4px !important; }
+  .print-col-side .skill-chip { font-size: 7.5pt !important; padding: 2px 7px !important; }
 }
 
 /* ─── RESPONSIVE ─────────────────────────────────────────────── */

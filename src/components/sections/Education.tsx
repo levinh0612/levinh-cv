@@ -12,7 +12,7 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ education })
   const { ref, inView } = useInView();
 
   return (
-    <div ref={ref} className={`mb-8 reveal${inView ? ' is-visible' : ''}`}>
+    <div ref={ref} className={`mb-8 reveal section-education${inView ? ' is-visible' : ''}`}>
       <div className="section-heading-block">
         <span>{lang === 'en' ? 'EDUCATION' : 'HỌC VẤN'}</span>
       </div>
@@ -21,6 +21,18 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ education })
           <span className="edu-school">{education.school}</span>
           <span className="edu-period-badge">{education.period}</span>
         </div>
+        {education.degree && (
+          <div className="edu-degree-row">
+            <span className="edu-degree-text">
+              {lang === 'en' ? education.degree : (education.degreeVi ?? education.degree)}
+            </span>
+            {education.classification && (
+              <span className="edu-classification">
+                {lang === 'en' ? education.classification : (education.classificationVi ?? education.classification)}
+              </span>
+            )}
+          </div>
+        )}
         <div className="edu-card-body">
           <div className="edu-field">
             <span className="edu-field-label">{lang === 'en' ? 'Major' : 'Chuyên ngành'}</span>
