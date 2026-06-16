@@ -21,8 +21,8 @@ export const WorkExperienceSection: React.FC<WorkExperienceSectionProps> = ({ ex
         <div key={expIdx} className="company-block">
 
           <div className="company-header">
-            <span className="company-name">{exp.company}</span>
-            <span className="company-period">{exp.period}</span>
+            <span className="company-name">{lang === 'vi' ? (exp.companyVi ?? exp.company) : exp.company}</span>
+            <span className="company-period">{lang === 'vi' ? (exp.periodVi ?? exp.period) : exp.period}</span>
           </div>
 
           <div className="company-location">
@@ -42,7 +42,7 @@ export const WorkExperienceSection: React.FC<WorkExperienceSectionProps> = ({ ex
                 <div key={roleIdx} className="role-card">
                   <div className="role-top">
                     <span className="role-title">{title}</span>
-                    <span className="role-period">{role.period}</span>
+                    <span className="role-period">{lang === 'vi' ? (role.periodVi ?? role.period) : role.period}</span>
                   </div>
                   <div className="role-skills-line">
                     <span className="skill-pfx">{lang === 'en' ? 'STACK' : 'CÔNG NGHỆ'}</span>

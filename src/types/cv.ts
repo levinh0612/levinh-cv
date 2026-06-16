@@ -67,13 +67,16 @@ export interface Role {
   titleEn: string;
   titleVi: string;
   period: string;
+  periodVi?: string;
   skills: string;
   bullets: RoleBullets;
 }
 
 export interface Experience {
   company: string;
+  companyVi?: string;
   period: string;
+  periodVi?: string;
   location: string;
   roles: Role[];
 }

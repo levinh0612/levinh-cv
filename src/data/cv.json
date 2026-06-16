@@ -19,8 +19,8 @@
     "hometown": "Ninh Thuận → Khánh Hoà"
   },
   "about": {
-    "en": "Full-Stack & ERP Engineer with 4 years at FAHASA — promoted to Head of Department within 2 years of joining. Led a 10-person team delivering ERP and mobile systems used by 3,000+ people across 140 bookstores every day. Recognized with consecutive Letters of Commendation (2023, 2024) and Certificate of Merit (2025) for outstanding technical and business impact.",
-    "vi": "Kỹ sư Phát Triển Full-Stack & ERP với 4 năm tại FAHASA — được thăng chức Trưởng Bộ Phận chỉ sau 2 năm gia nhập. Dẫn dắt đội 10 kỹ sư xây dựng hệ thống ERP và ứng dụng mobile phục vụ 3.000+ người dùng tại 140 nhà sách mỗi ngày. Được ghi nhận với Thư Khen liên tiếp (2023, 2024) và Giấy Khen (2025) vì thành tích kỹ thuật và kinh doanh xuất sắc."
+    "en": "Full-Stack & ERP Engineer with 4 years at FAHASA — promoted to Head of Department after nearly 3 years of joining. Led a 10-person team delivering ERP and mobile systems used by 3,000+ people across 140 bookstores every day. Recognized with consecutive Letters of Commendation (2023, 2024) and Certificate of Merit (2025) for outstanding technical and business impact.",
+    "vi": "Kỹ sư Phát Triển Full-Stack & ERP với 4 năm tại FAHASA — được thăng chức Trưởng Bộ Phận sau gần 3 năm gia nhập. Dẫn dắt đội 10 kỹ sư xây dựng hệ thống ERP và ứng dụng mobile phục vụ 3.000+ người dùng tại 140 nhà sách mỗi ngày. Được ghi nhận với Thư Khen liên tiếp (2023, 2024) và Giấy Khen (2025) vì thành tích kỹ thuật và kinh doanh xuất sắc."
   },
   "objective": {
     "en": "As a **Full-Stack & ERP Engineer** in the AI era, I position myself as a strategic **Problem Solver** — one who architects real solutions, not just ships features. My goal is to join a team where I can apply deep **root-cause thinking** and **AI-augmented productivity** to build systems that genuinely move the business forward.",
@@ -38,11 +38,11 @@
     "period": "SEP 2018 - OCT 2022"
   },
   "skills": {
-    "frontend": ["ReactJS", "React Native", "Next.js", "TypeScript", "JavaScript", "Redux Toolkit", "Zustand", "Context API", "Angular", "HTML", "CSS", "MUI", "Tailwind CSS"],
-    "backend": ["Java (Spring Boot)", "NodeJS", "REST API", "WebSocket", "Apache Kafka", "iDempiere (ERP)", "Keycloak"],
+    "frontend": ["ReactJS", "React Native", "Next.js", "TypeScript", "JavaScript", "Redux Toolkit", "Zustand", "Context API", "AngularJS", "HTML", "CSS", "MUI", "Tailwind CSS"],
+    "backend": ["Java (Spring Boot / iDempiere)", "NodeJS", "REST API", "WebSocket", "Apache Kafka", "Keycloak", "JWT", "iDempiere (ERP)"],
     "platform": ["Web", "Android", "iOS"],
-    "database": ["PostgreSQL", "MongoDB", "Redis", "MySQL", "MariaDB"],
-    "devops": ["Docker", "Git", "Vite", "Vercel", "Jira", "Postman"],
+    "database": ["PostgreSQL", "MariaDB", "MongoDB", "Redis", "MySQL"],
+    "devops": ["Docker", "Git", "CodePush", "Vite", "Vercel", "Jira", "Postman"],
     "ai": ["Cursor", "GitHub Copilot", "Claude AI"],
     "soft": [
       "Problem-solving & root-cause analysis",
@@ -86,30 +86,48 @@
   "experience": [
     {
       "company": "HO CHI MINH CITY BOOK DISTRIBUTION CORPORATION - FAHASA",
-      "period": "SEP 2022 - MAY 2026",
+      "companyVi": "CÔNG TY CỔ PHẦN PHÁT HÀNH SÁCH TP.HCM - FAHASA",
+      "period": "SEP 2022 - JUN 2026",
+      "periodVi": "Tháng 9/2022 - Tháng 6/2026",
       "location": "387 - 389 Ba Trung Street, District 3, Ho Chi Minh City",
       "roles": [
         {
-          "titleEn": "Full-Stack Engineer → Head of Department",
-          "titleVi": "Lập Trình Viên Full-Stack → Trưởng Bộ Phận",
-          "period": "SEP 2022 - MAY 2026",
-          "skills": "React Native / ReactJS / Node.js / Java Spring Boot / Apache Kafka / PostgreSQL / MongoDB / Redis / iDempiere",
+          "titleEn": "Head of Department — System Software Development",
+          "titleVi": "Trưởng Bộ Phận — Phòng Phát Triển Phần Mềm Hệ Thống",
+          "period": "AUG 2025 - JUN 2026",
+          "periodVi": "Tháng 8/2025 - Tháng 6/2026",
+          "skills": "Java 21 / Spring Boot / ReactJS / AngularJS / Apache Kafka / Keycloak / JWT / PostgreSQL / Redis / MongoDB / iDempiere",
           "bullets": {
             "en": [
-              "Built F-Hub — internal mobile app (React Native + NodeJS) serving 3,000+ users across 140 FAHASA bookstores; digitized end-to-end business workflows eliminating 2+ hours of manual work per employee daily — equivalent to 6,000+ person-hours saved company-wide each day",
-              "Delivered companion admin dashboard (ReactJS) for user management, activity monitoring, and operational analytics; implemented real-time features via WebSocket",
-              "Promoted to Head of Department within 2 years — led 10-person engineering team across recruitment, mentoring, sprint planning, and system architecture",
-              "Optimized iDempiere ERP (Java + PostgreSQL) by archiving 5 years of historical data and purging redundant indexes — cut document processing time from 10 minutes to under 2 minutes for 3,000+ daily users",
-              "Designed and maintained a real-time POS-to-ERP sync pipeline (Apache Kafka + Spring Boot producer/consumer services) streaming sales tickets from 140 stores into iDempiere within seconds — with offset tracking, version-controlled consumer rollover, and automated error retry/alerting",
-              "Architected Dev & Ops Dashboard (React 19 + Spring Boot 3 + Java 21) replacing ad-hoc Excel tracking — real-time visibility into cluster health, POS sync, DB backup, and Keycloak SSO; reduced user support time from half a day to 30 minutes"
+              "Led the engineering team across recruitment, mentoring, sprint planning, and system architecture",
+              "Owned iDempiere ERP platform reliability — optimized document-processing workflows and heavy SQL queries, cutting processing time from 10+ minutes to under 2 minutes for 3,000+ daily users; maintained real-time order sync pipeline (Apache Kafka + Spring Boot) from 140 stores with automated error retry and alerting",
+              "Built IT Operations Dashboard (ReactJS + Spring Boot + Java 21) enabling the ops team to self-serve system status and issue diagnosis — eliminated the ops → dev → user support loop, reducing average response time from hours to under 30 minutes"
             ],
             "vi": [
-              "Xây dựng F-Hub — ứng dụng mobile (React Native + NodeJS) phục vụ 3.000+ người dùng tại 140 nhà sách Fahasa; số hóa toàn bộ quy trình nghiệp vụ, xóa bỏ 2+ giờ thao tác thủ công/ngày/nhân viên — tương đương 6.000+ giờ công tiết kiệm cho toàn công ty mỗi ngày",
-              "Phát triển dashboard quản trị (ReactJS) hỗ trợ quản lý người dùng, theo dõi hoạt động và phân tích vận hành; tích hợp real-time qua WebSocket",
-              "Được thăng chức Trưởng Bộ Phận sau 2 năm — dẫn dắt đội 10 kỹ sư phụ trách tuyển dụng, mentoring, lập kế hoạch sprint và kiến trúc hệ thống",
-              "Tối ưu ERP iDempiere (Java + PostgreSQL): phân tách 5 năm dữ liệu lịch sử sang DB riêng, dọn dẹp index dư thừa — giảm thời gian xử lý chứng từ từ 10 phút xuống dưới 2 phút cho 3.000+ người dùng hàng ngày",
-              "Thiết kế và vận hành pipeline đồng bộ POS → ERP theo thời gian thực (Apache Kafka + Spring Boot producer/consumer) — đưa dữ liệu bán hàng từ 140 nhà sách vào iDempiere chỉ trong vài giây, có theo dõi offset, version control để chuyển đổi consumer an toàn và tự động retry/cảnh báo lỗi",
-              "Xây dựng Dashboard Dev & Ops (React 19 + Spring Boot 3 + Java 21) thay thế Excel thủ công — giám sát real-time cluster health, POS sync, backup DB, Keycloak SSO; giảm thời gian hỗ trợ từ nửa ngày xuống 30 phút"
+              "Dẫn dắt đội kỹ sư phụ trách tuyển dụng, mentoring, lập kế hoạch sprint và kiến trúc hệ thống",
+              "Chịu trách nhiệm vận hành và hiệu suất ERP iDempiere — tối ưu quy trình xử lý chứng từ và các câu query nặng, giảm thời gian xử lý từ 10+ phút xuống dưới 2 phút cho 3.000+ người dùng hàng ngày; duy trì pipeline đồng bộ đơn hàng thời gian thực (Apache Kafka + Spring Boot) từ 140 nhà sách với cơ chế retry và cảnh báo lỗi tự động",
+              "Xây dựng Dashboard Vận Hành IT (ReactJS + Spring Boot + Java 21) giúp bộ phận vận hành tự truy xuất kiểm tra trạng thái hệ thống và chẩn đoán sự cố — loại bỏ vòng lặp hỗ trợ ops → dev → user, giảm thời gian phản hồi từ hàng giờ xuống dưới 30 phút"
+            ]
+          }
+        },
+        {
+          "titleEn": "Full-Stack Engineer",
+          "titleVi": "Lập Trình Viên Full-Stack",
+          "period": "SEP 2022 - JUL 2025",
+          "periodVi": "Tháng 9/2022 - Tháng 7/2025",
+          "skills": "React Native 0.66 / Node.js 16 / ReactJS / AngularJS / Java 8 / Spring Boot / Keycloak / JWT / MariaDB / PostgreSQL / MongoDB / Redis / iDempiere / CodePush",
+          "bullets": {
+            "en": [
+              "Maintained and evolved F-Hub — internal mobile app (React Native 0.66 + Node.js 16) on iOS & Android serving 3,000+ employees across 140 FAHASA bookstores; features included barcode-based inventory checking, merchandise inspection, sales consulting tools, and a multi-level task/mission management system that digitized daily manual workflows",
+              "Designed and built RESTful APIs on iDempiere ERP (Java 8 + PostgreSQL) consumed by F-Hub, enabling real-time data exchange between the mobile layer and the ERP core; implemented auth flows with Keycloak and JWT",
+              "Operated and extended the internal CMS web dashboard (ReactJS / AngularJS) providing management-level users with aggregated task status, mission tracking, and user management across all store levels",
+              "Optimized iDempiere ERP database (PostgreSQL) by archiving historical data and purging redundant indexes, significantly improving document processing speed for 3,000+ daily users"
+            ],
+            "vi": [
+              "Vận hành và phát triển F-Hub — ứng dụng mobile nội bộ (React Native 0.66 + Node.js 16) trên iOS & Android, phục vụ 3.000+ nhân viên tại 140 nhà sách Fahasa; tính năng chính: kiểm hàng bằng barcode, kiểm kê, tư vấn bán hàng và hệ thống quản lý tác vụ/nhiệm vụ đa cấp giúp số hóa quy trình thủ công hàng ngày",
+              "Thiết kế và xây dựng API RESTful trên ERP iDempiere (Java 8 + PostgreSQL) phục vụ F-Hub, đảm bảo trao đổi dữ liệu thời gian thực giữa layer mobile và lõi ERP; triển khai luồng xác thực với Keycloak và JWT",
+              "Vận hành và mở rộng web dashboard CMS (ReactJS / AngularJS) cung cấp cho quản lý tổng quan tác vụ, nhiệm vụ và quản lý người dùng các cấp toàn hệ thống nhà sách",
+              "Tối ưu database ERP iDempiere (PostgreSQL) bằng cách phân tách dữ liệu lịch sử và dọn dẹp index dư thừa, cải thiện đáng kể tốc độ xử lý chứng từ cho 3.000+ người dùng hàng ngày"
             ]
           }
         }
