@@ -19,12 +19,12 @@
     "hometown": "Ninh Thuận → Khánh Hoà"
   },
   "about": {
-    "en": "Full-Stack & ERP Engineer with 4 years at FAHASA — promoted to Head of Department after nearly 3 years of joining. Led a 10-person team delivering ERP and mobile systems used by 3,000+ people across 140 bookstores every day. Recognized with consecutive Letters of Commendation (2023, 2024) and Certificate of Merit (2025) for outstanding technical and business impact.",
-    "vi": "Kỹ sư Phát Triển Full-Stack & ERP với 4 năm tại FAHASA — được thăng chức Trưởng Bộ Phận sau gần 3 năm gia nhập. Dẫn dắt đội 10 kỹ sư xây dựng hệ thống ERP và ứng dụng mobile phục vụ 3.000+ người dùng tại 140 nhà sách mỗi ngày. Được ghi nhận với Thư Khen liên tiếp (2023, 2024) và Giấy Khen (2025) vì thành tích kỹ thuật và kinh doanh xuất sắc."
+    "en": "Software Engineer with 4 years at FAHASA — promoted to Head of Department after nearly 3 years of joining. Led a 10-person team delivering ERP and mobile systems used by 3,000+ people across 140 bookstores every day. Recognized with consecutive Letters of Commendation (2023, 2024) and Certificate of Merit (2025) for outstanding technical and business impact.",
+    "vi": "Kỹ sư Phần Mềm với 4 năm tại FAHASA — được thăng chức Trưởng Bộ Phận sau gần 3 năm gia nhập. Dẫn dắt đội 10 kỹ sư xây dựng hệ thống ERP và ứng dụng mobile phục vụ 3.000+ người dùng tại 140 nhà sách mỗi ngày. Được ghi nhận với Thư Khen liên tiếp (2023, 2024) và Giấy Khen (2025) vì thành tích kỹ thuật và kinh doanh xuất sắc."
   },
   "objective": {
-    "en": "As a **Full-Stack & ERP Engineer** in the AI era, I position myself as a strategic **Problem Solver** — one who architects real solutions, not just ships features. My goal is to join a team where I can apply deep **root-cause thinking** and **AI-augmented productivity** to build systems that genuinely move the business forward.",
-    "vi": "Là **Kỹ Sư Full-Stack & ERP** trong thời đại AI, tôi định vị bản thân là **Người Giải Quyết Vấn Đề** chiến lược — không chỉ viết code mà kiến trúc giải pháp thực sự. Mục tiêu là gia nhập đội ngũ nơi tôi có thể áp dụng **tư duy phân tích gốc rễ** và **năng suất AI** để xây dựng hệ thống tạo ra giá trị thực cho doanh nghiệp.",
+    "en": "**Software Engineer** with 4 years of experience at FAHASA, having worked directly across mobile, web, ERP, and backend. I'm now looking for an environment to go deep in one specific direction (mobile / web / backend) and grow into a true specialist — while continuing to apply the team leadership and mentoring experience I built as Head of Department.",
+    "vi": "**Kỹ sư Phần Mềm** với 4 năm kinh nghiệm tại FAHASA, đã trực tiếp đảm nhận nhiều mảng: mobile, web, ERP, backend. Tôi đang tìm một môi trường để tập trung đào sâu vào một hướng cụ thể (mobile / web / backend) và trở thành chuyên gia thực thụ trong mảng đó — đồng thời tiếp tục phát huy kinh nghiệm dẫn dắt và hỗ trợ đội nhóm tích lũy được từ vai trò Trưởng Bộ Phận.",
     "impacts": {
       "en": [],
       "vi": []
@@ -91,8 +91,8 @@
     {
       "company": "HO CHI MINH CITY BOOK DISTRIBUTION CORPORATION - FAHASA",
       "companyVi": "CÔNG TY CỔ PHẦN PHÁT HÀNH SÁCH TP.HCM - FAHASA",
-      "period": "SEP 2022 - JUN 2026",
-      "periodVi": "Tháng 9/2022 - Tháng 6/2026",
+      "period": "SEP 2022 - SEP 2026",
+      "periodVi": "Tháng 9/2022 - Tháng 9/2026",
       "location": "387 - 389 Ba Trung Street, District 3, Ho Chi Minh City",
       "roles": [
         {
