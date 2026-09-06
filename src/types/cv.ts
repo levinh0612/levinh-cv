@@ -10,6 +10,8 @@ export interface PersonalInfo {
   linkedinDisplay: string;
   portfolioUrl?: string;
   portfolioDisplay?: string;
+  githubUrl?: string;
+  githubDisplay?: string;
   avatarUrl: string;
   hometown?: string;
 }
