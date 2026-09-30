@@ -5,7 +5,7 @@
   },
   "personal": {
     "fullName": "Nguyen Huu Le Vinh",
-    "jobTitle": "Head of Department — System Software Development",
+    "jobTitle": "Leader — System Software Development",
     "jobTitleVi": "Trưởng Bộ Phận — Phòng Phát Triển Phần Mềm Hệ Thống",
     "dob": "06 - 12 - 2000",
     "location": "Ho Chi Minh, Vietnam",
@@ -21,12 +21,12 @@
     "hometown": "Ninh Thuận → Khánh Hoà"
   },
   "about": {
-    "en": "Software Engineer with 4 years at FAHASA — promoted to Head of Department after nearly 3 years of joining. Led a 10-person team delivering ERP and mobile systems used by 3,000+ people across 140 bookstores every day. Recognized with consecutive Letters of Commendation (2023, 2024) and Certificate of Merit (2025) for outstanding technical and business impact.",
-    "vi": "Kỹ sư Phần Mềm với 4 năm tại FAHASA — được thăng chức Trưởng Bộ Phận sau gần 3 năm gia nhập. Dẫn dắt đội 10 kỹ sư xây dựng hệ thống ERP và ứng dụng mobile phục vụ 3.000+ người dùng tại 140 nhà sách mỗi ngày. Được ghi nhận với Thư Khen liên tiếp (2023, 2024) và Giấy Khen (2025) vì thành tích kỹ thuật và kinh doanh xuất sắc."
+    "en": "Leader with 4 years at FAHASA — promoted to Leader after nearly 3 years of joining. Led a 10-person team delivering ERP and mobile systems used by 3,000+ people across 140 bookstores every day. Recognized with consecutive Letters of Commendation (2023, 2024) and Certificate of Merit (2025) for outstanding technical and business impact.",
+    "vi": "Trưởng Bộ Phận với 4 năm tại FAHASA — được thăng chức Trưởng Bộ Phận sau gần 3 năm gia nhập. Dẫn dắt đội 10 kỹ sư xây dựng hệ thống ERP và ứng dụng mobile phục vụ 3.000+ người dùng tại 140 nhà sách mỗi ngày. Được ghi nhận với Thư Khen liên tiếp (2023, 2024) và Giấy Khen (2025) vì thành tích kỹ thuật và kinh doanh xuất sắc."
   },
   "objective": {
-    "en": "**Software Engineer** with 4 years of experience at FAHASA, having worked directly across mobile, web, ERP, and backend. I'm now looking for an environment to go deep in one specific direction (mobile / web / backend) and grow into a true specialist — while continuing to apply the team leadership and mentoring experience I built as Head of Department.",
-    "vi": "**Kỹ sư Phần Mềm** với 4 năm kinh nghiệm tại FAHASA, đã trực tiếp đảm nhận nhiều mảng: mobile, web, ERP, backend. Tôi đang tìm một môi trường để tập trung đào sâu vào một hướng cụ thể (mobile / web / backend) và trở thành chuyên gia thực thụ trong mảng đó — đồng thời tiếp tục phát huy kinh nghiệm dẫn dắt và hỗ trợ đội nhóm tích lũy được từ vai trò Trưởng Bộ Phận.",
+    "en": "**Leader** with 4 years of experience at FAHASA, having worked directly across mobile, web, ERP, and backend. I'm looking for a Leader role where I can drive technical direction, architecture and code quality, and mentor engineers — building on the team leadership experience I gained as Leader leading a 10-person team.",
+    "vi": "**Trưởng Bộ Phận** với 4 năm kinh nghiệm tại FAHASA, đã trực tiếp đảm nhận nhiều mảng: mobile, web, ERP, backend. Tôi đang tìm vị trí Trưởng Bộ Phận để định hướng kỹ thuật, kiến trúc, chất lượng code và dẫn dắt đội ngũ kỹ sư — phát huy kinh nghiệm quản lý đội 10 người tích lũy được từ vai trò Trưởng Bộ Phận.",
     "impacts": {
       "en": [],
       "vi": []
@@ -98,7 +98,7 @@
       "location": "387 - 389 Ba Trung Street, District 3, Ho Chi Minh City",
       "roles": [
         {
-          "titleEn": "Head of Department — System Software Development",
+          "titleEn": "Leader — System Software Development",
           "titleVi": "Trưởng Bộ Phận — Phòng Phát Triển Phần Mềm Hệ Thống",
           "period": "AUG 2025 - JUN 2026",
           "periodVi": "Tháng 8/2025 - Tháng 6/2026",
